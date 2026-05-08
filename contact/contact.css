@@ -1,0 +1,272 @@
+h1, h2, .spicy-rice-regular {
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.protest-revolution-regular {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: left; 
+    color: #F1E4CB;
+}
+
+.title{
+    white-space: nowrap;
+}
+
+h2{
+    text-align:left;
+    font-size: 2rem;
+    color: #F1E4CB;
+}
+
+
+li {
+    list-style-type: none;
+    font-size: 24px;
+    text-align: end;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color:#F1E4CB;
+}
+
+main {
+    background-color: #3b0505;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #230303;
+    color: #F1E4CB;
+    display:flex;
+    flex-direction: row;
+    padding-left: 24px;
+    height: 70px;
+}
+
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+
+}
+
+.menu-bar{
+    filter: brightness(0) saturate(100%) invert(98%) sepia(45%) saturate(956%) hue-rotate(313deg) brightness(93%) contrast(95%);
+    align-items: center;
+    display: flex;
+}
+.nav-links {
+    display: none;
+    font-family: "Spicy Rice", serif;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo-icon{
+    width: 50%;
+    height: auto;
+    white-space: nowrap;
+}
+
+.hero-section h1{
+    font-family: "Protest Revolution" , sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hero-section{
+    height: 250px;
+    background-color:#230303;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;
+    color:#F1E4CB;   
+}
+
+.contact-overview{
+    background-color: #3b0505;
+    height: 1000px;
+}
+
+.contact-overview p{
+    text-align: center;
+    padding-top: 24px;
+}
+@media screen and (min-width: 1024px) {
+   .logo-icon {
+        max-width: 500px;
+        margin-left: 24px;
+    }
+
+    p{
+    font-size: 24px;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    li {
+        font-size: 28px;
+
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 24px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #F1E4CB;
+        padding: 8px 12px;
+    }
+    
+
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none; /* hide by default */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #F1E4CB;
+        border: 1px solid #3b0505;
+        list-style: none;
+        min-width: 160px;
+        z-index: 100;
+    }
+
+    .dropdown-content li a {
+        display: block;
+        padding: 8px 12px;
+        color: #3b0505;
+    }
+
+    .dropdown-content li a:hover {
+        background-color: #bda593;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .hero-section h1{
+       font-size: 6rem;
+    }
+
+    .hero-section{
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .logo-icon {
+        max-width: 500px;
+        margin-left: 24px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    li {
+        font-size: 28px;
+
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 24px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #F1E4CB;
+        padding: 8px 12px;
+    }
+
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none; /* hide by default */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #F1E4CB;
+        border: 1px solid #3b0505;
+        list-style: none;
+        min-width: 160px;
+        z-index: 100;
+    }
+
+    .dropdown-content li a {
+        display: block;
+        padding: 8px 12px;
+        color: #3b0505;
+    }
+
+    .dropdown-content li a:hover {
+        background-color: #bda593;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+    
+    .hero-section h1{
+       font-size: 6rem;
+    }
+
+    .hero-section{
+        height: 450px;
+    }
+}

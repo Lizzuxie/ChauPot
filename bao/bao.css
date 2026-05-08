@@ -1,0 +1,401 @@
+h1, h2, .spicy-rice-regular {
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.protest-revolution-regular {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: left; 
+    color: #F1E4CB;
+}
+
+.title{
+    white-space: nowrap;
+}
+
+h2{
+    text-align: left;
+    font-size: 2rem;
+    color: #F1E4CB;
+}
+
+li {
+    list-style-type: none;
+    font-size: 24px;
+    text-align: end;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #F1E4CB;
+}
+
+main {
+    background-color: #3b0505;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #230303;
+    color: #F1E4CB;
+    display:flex;
+    flex-direction: row;
+    padding-left: 24px;
+    height: 70px;
+}
+
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+
+}
+
+.menu-bar{
+    filter: brightness(0) saturate(100%) invert(98%) sepia(45%) saturate(956%) hue-rotate(313deg) brightness(93%) contrast(95%);
+    align-items: center;
+    display: flex;
+}
+
+.nav-links {
+    display: none;
+    font-family: "Spicy Rice", serif;
+}
+
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.logo-icon{
+    width: 50%;
+    height: auto;
+    white-space: nowrap;
+}
+
+.hero-section h1{
+    font-family: "Protest Revolution" , sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hero-section{
+    height: 250px;
+    background-color:#230303;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;
+    color:#F1E4CB;
+    text-shadow: 5px 4px  #3b0505;   
+}
+
+.bao-overview p{
+    max-width: 70%;
+    text-align: center;
+    padding-top: 24px;
+}
+
+.bao-overview {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;
+}
+
+.bao-call {
+    font-family: "Spicy Rice", serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-shadow: 2px 4px #743014;  
+}
+
+
+.bao-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1;
+    align-self: center;
+}
+
+.bao-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    padding-bottom: 2rem;
+    margin: 16px 0;
+    text-align: center;
+    background-color: #743014;
+    border: 2px solid #230303;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.bao {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 32px;
+}
+
+.card-text p, .card-text h2 {
+    display: flex;
+    color: #F1E4CB;
+    justify-content: center;
+}
+
+.card-text{
+    flex: 1;
+    min-width: 0;
+}
+
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .logo-icon {
+        max-width: 500px;
+        margin-left: 24px;
+    }
+
+    li {
+        font-size: 28px;
+
+    }
+
+
+    .order-button{
+        margin-top: auto; 
+        align-self: center;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 24px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #F1E4CB;
+        padding: 8px 12px;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none; /* hide by default */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #F1E4CB;
+        border: 1px solid #3b0505;
+        list-style: none;
+        min-width: 160px;
+        z-index: 100;
+    }
+
+    .dropdown-content li a {
+        display: block;
+        padding: 8px 12px;
+        color: #3b0505;
+    }
+
+    .dropdown-content li a:hover {
+        background-color: #bda593;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .bao-call{
+        font-size: 2.0rem;
+    }
+
+    .bao{
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .bao-card img{
+        min-width: 150px;
+        max-width: 150px;
+    }
+    
+    .bao-card {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        min-width: 0;
+    }
+
+    .card-text p, .card-text h2 {
+        display: flex;
+        min-width: 0;
+        color: #F1E4CB;
+        flex: 1;
+        margin: 0;
+        justify-content: left;
+        text-align: left;
+    }
+
+    #drinks h1{
+        font-family: "Protest Revolution" , sans-serif;
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1201px) {
+    .logo-icon {
+        max-width: 500px;
+        margin-left: 24px;
+    }
+
+    p{
+    font-size: 24px;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    li {
+        font-size: 28px;
+
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 24px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #F1E4CB;
+        padding: 8px 12px;
+    }
+
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none; /* hide by default */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #F1E4CB;
+        border: 1px solid #3b0505;
+        list-style: none;
+        min-width: 160px;
+        z-index: 100;
+    }
+
+    .dropdown-content li a {
+        display: block;
+        padding: 8px 12px;
+        color: #3b0505;
+    }
+
+    .dropdown-content li a:hover {
+        background-color: #bda593;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+    
+    .hero-section h1{
+       font-size: 6rem;
+    }
+
+    .hero-section{
+        height: 450px;
+    }
+
+    .bao-call{
+        font-size: 2.0rem;
+    }
+
+    .bao{
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .bao-card img{
+        min-width: 250px;
+        max-width: 250px;
+    }
+    
+    .bao-card {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        min-width: 0;
+    }
+
+    .card-text p, .card-text h2 {
+        display: flex;
+        min-width: 0;
+        color: #F1E4CB;
+        flex: 1;
+        margin: 0;
+        justify-content: left;
+        text-align: left;
+    }
+
+    #baos h1{
+        font-family: "Protest Revolution" , sans-serif;
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<title> Chau's Pot: Mobile Website </title>
+
+<head>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Protest+Revolution&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+</head>
+
+<header class="site-header">
+        <div class = "logo-container">
+            <img src="images/logo.png" alt="Chau's Pot Logo" class = "logo-icon">
+        </div>
+
+        <div class = "menu-bar" id="menuBar">
+            <img onclick="hamClick()" src="images/bars-solid.png" alt="menu-bar" id="ham" width = "50px">
+        </div>
+    
+        <nav>
+            <ul class="nav-links">
+                <li><a href = "index.html" > Home </a></li>
+
+                <li class = "dropdown">
+                    <a href = "menu/menu.html"> Menu +</a>
+                    <ul class = "dropdown-content">
+                        <li><a href="menu/menu.html"> Build a Lao</a></li>
+                        <li><a href="bao/bao.html"> Bao</a></li>
+                        <li><a href="drink/drink.html"> Drinks</a></li>
+                    </ul>
+                </li>
+                <li><a href = "contact/contact.html" > Contact </a></li>
+            </ul>
+        </nav>
+</header>
+
+<body>
+    <ul class="drawer-nav">
+        <li><a href = "index.html" > Home </a></li>
+        <li><a href="menu/menu.html"> Build a Lao</a></li>
+        <li><a href="bao/bao.html"> Bao</a></li>
+        <li><a href="drink/drink.html"> Drinks</a></li>
+        <li><a href = "contact/contact.html" > Contact </a></li>
+    </ul>
+
+    <script src="homepage.js"></script>
+
+    <main>
+        <section class = "hero-section"> 
+            <h1> Your Pot. Your Pace. </h1>
+            <h2> Bun, bowl, brew: warm your way.</h2>
+            <a href ="menu/menu.html" class = "product-button"> View Menu</a>
+        </section>
+
+        <section class = "about-us">
+
+            <div class="about-container"> 
+
+                <div class = about-image>
+                    <img src="images/about us.jpg" alt="cafe-interior">
+                </div>
+                
+                <div class="about-content">
+                    <h2> About Us </h2>
+                    <p class = "about-description"> 
+                    Inspired by the communal warmth of shared meals and Vietnamese comfort, we as a family set out to create something that blends creativity with comfort. 
+                    <br>
+                    <br>
+                    Our signature "build-your-own-lau" brings a twist to traditional hotpot. Drawing inspiration from malatang, we invite you to create a meal that's entirely your own.
+                    <br>
+                    <br>
+                    For lighter options, our banh baos offer a perfect street-style snack. And to complete the experience, we serve cafe-style drinks infused with Vietnamese flair.
+                    <br>
+                    <br>
+                    Bring your friends, family, or yourself to gather, sip, and settle in.
+                    </p>
+                </div>   
+
+            </div>
+            
+        </section>
+    
+        <section class = "products">
+            <div class = "products-inner">
+                <div class = "products-header">
+                    <h2> Our Products </h2>
+                    <p class ="products-info"> Explore our hot pots, homemade bao, and cafe drinks to elevate comfort and flavor.</p>
+                
+                </div>
+
+            <!-- Below are three sections: Lau, Bao, and Drinks-->
+                <div class = "product-container">
+                    <div class = "lau">
+                        <img class = "section-image"  src = "images/hotpot.png" alt = "lau">
+                        <h2> Build Your Own Lau </h2>
+                        <p class = "description"> 
+                        Build your own lau! Express your creativity through a warm pot of soup! Start by choosing a variety of soup bases, then customize your pot with fresh proteins, vegetables, noodles, and other flavorful add-ins. 
+                        </p>
+
+                        <a href ="menu/menu.html" class = "order-button"> View Lau's Selection </a>
+                    </div>
+
+                    <div class ="bao">
+                        <img class = "section-image"  src = "images/bao-bao1.png" alt="bao">
+                        <h2> Warm Banh Bao </h2>
+                        <p class = "description">Our Baos are homemade, hand-steamed to perfection. It features a pillowy-soft dough and flavor fillings that balance savory, sweet, and aromatic notes. The warm bao creates a comforting experience that brings home-cooked meals while elevating them with thoughtful flavor combinations. </p>
+                        <a href ="bao/bao.html" class = "order-button"> View Baos </a>
+                    </div>
+            
+
+                    <div class = "drink"> 
+                        <img class = "section-image"  src = "images/drinks-coffee.png" alt="drink">
+                        <h2> Drinks </h2>
+                        <p class = "description"> Complement your meal with our selection of curated cafe-style drinks, which pair perfectly with your hot pot and bao. From rich, bold flavors of Vietnamese iced coffee to earthy notes of matcha lattes, each beverage is designed to be fresh. For lighter options, try our fruit teas or other seasonal selections, each made with fresh and homemade ingredients.  </p>
+                        <a href ="drink/drink.html" class = "order-button"> View Drinks </a>
+                    </div>
+                </div>
+            </div>
+        </section>       
+    </main>
+</body>
